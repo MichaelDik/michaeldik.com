@@ -9,17 +9,19 @@
 
 </head>
 
-<div class="navbar">
-    <button class="nav-button">☰</button>
-    <div class="nav-links">
-        <a href="#" class="active">Work</a>
-        <a href="Reading.html"> Books </a>
-        <a href="thoughts.html"> Thoughts </a>
-    </div>
-    <button class="nav-button icon"></button>
-</div>
+<script>
+    // Dynamically load the navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+</script>
 
 <body>
+        <div id="navbar-container"></div> <!-- Add navbar container -->
+
     <div class="middle">
         <h1> Weclome to the digital home of Michael Dik </h1>
         <p> This website is currently under construction </p>

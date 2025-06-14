@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="app.css">
 </head>
 
+
 <body>
-    <p> Holder for books! </p>
+<div id="navbar-container"></div>
+<p> Currently Reading: Deep Work </p>
+
+<script>
+    // Dynamically load the navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+</script>
+
 </body>
 
 </html>
