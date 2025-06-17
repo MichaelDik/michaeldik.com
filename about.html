@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MD | About </title>
+    <link rel="stylesheet" href="app.css">
 </head>
-
-<body>
-  <script>
+<script>
     // Dynamically load the navbar
     fetch('navbar.html')
         .then(response => response.text())
@@ -17,6 +16,10 @@
         })
         .catch(error => console.error('Error loading navbar:', error));
 </script>
+
+<body>
+    <div id="navbar-container"></div> <!-- Add navbar container -->
+  
 
 <p> 
 
