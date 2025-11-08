@@ -3,20 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the Website of MD!</title>
+    <meta name="description" content="Michael Dik - Solution Engineer, Writer, and Technologist">
+    <title>Michael Dik</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div id="navbar-container">
-        <!-- Navbar will load here -->
-        <noscript>Please enable JavaScript to view the navigation bar.</noscript>
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <div class="hero">
+            <h1>Michael Dik</h1>
+            <p>Solution Engineer at Salesforce. </p>
+        </div>
+
+        <div class="content-section">
+            <h2>About Me</h2>
+            <p>
+                I'm a Solution Engineer at Salesforce based in NYC, where I help customers leverage technology 
+                to solve complex business problems. I'm passionate about AI, product development, and helping 
+                teams build better software.
+            </p>
+            <p>
+                On this site, I share my thoughts on technology, what I'm reading, and lessons learned along the way.
+            </p>
+        </div>
+
     </div>
-    <div class="middle">
-        <h1>Welcome to the digital home of Michael Dik</h1>
-        <p>This website is currently under construction</p>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-bio">
+                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
+                    
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © Michael Dik 2025 • <a href="mailto:mwdik@comcast.net">Contact</a>
+            </div>
+        </div>
     </div>
+
     <script>
-        // Dynamically load the navbar
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {

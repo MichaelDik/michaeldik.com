@@ -1,30 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MD | About </title>
+    <meta name="description" content="About Michael Dik - Solution Engineer, Writer, Technologist">
+    <title>About | Michael Dik</title>
     <link rel="stylesheet" href="app.css">
 </head>
-<script>
-    // Dynamically load the navbar
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-</script>
-
 <body>
-    <div id="navbar-container"></div> <!-- Add navbar container -->
-  
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <h1>About</h1>
+        
+        <div class="article-meta">
+            <span>NYC-based Solution Engineer</span>
+        </div>
 
-<p> 
+        <div style="display: flex; gap: 2rem; margin-bottom: 3rem; align-items: start;">
+            <div style="flex: 1;">
+                <p>
+                    I'm a Solution Engineer at <strong>Salesforce</strong>, where I help customers leverage 
+                    technology to solve complex business problems and drive digital transformation. Based in 
+                    New York City, I work at the intersection of product, engineering, and customer success.
+                </p>
+                
+                <p>
+                    My work focuses on helping organizations adopt AI-powered solutions, build scalable systems, 
+                    and create exceptional customer experiences. I'm passionate about finding elegant solutions 
+                    to difficult problems and making technology accessible and useful.
+                </p>
+            </div>
+            <div style="flex-shrink: 0;">
+                <img src="profile.jpeg" alt="Michael Dik" 
+                     style="width: 180px; height: 180px; border-radius: 8px; object-fit: cover; 
+                            border: 2px solid var(--border-color);" />
+            </div>
+        </div>
 
-    NYC-based, current Solution Engineer @ Salesforce
-</p>
+        <h2>What I Do</h2>
+        
+        <p>
+            As a Solution Engineer, I work with customers to understand their unique challenges and design 
+            solutions that deliver real business value. This involves:
+        </p>
+
+        <ul>
+            <li>Understanding complex business requirements and translating them into technical solutions</li>
+            <li>Designing and demonstrating product capabilities tailored to customer needs</li>
+            <li>Building prototypes and proof-of-concepts to validate approaches</li>
+            <li>Partnering with sales, engineering, and product teams to ensure customer success</li>
+            <li>Staying current with emerging technologies, particularly in AI and automation</li>
+        </ul>
+
+        <h2>Why I Write</h2>
+        
+        <p>
+            I started this site to document what I'm learning and share insights with others on similar journeys. 
+            Writing helps me:
+        </p>
+
+        <ul>
+            <li><strong>Learn more effectively:</strong> Articulating ideas in writing reveals gaps in understanding 
+                and forces clearer thinking</li>
+            <li><strong>Build in public:</strong> Sharing work creates opportunities for feedback and connection 
+                with others</li>
+            <li><strong>Contribute back:</strong> I've learned so much from others writing online—this is my way 
+                of contributing to that ecosystem</li>
+            <li><strong>Track progress:</strong> Looking back at what I've written shows how thinking evolves 
+                over time</li>
+        </ul>
+
+        <h2>Current Interests</h2>
+        
+        <p>
+            Right now, I'm particularly interested in:
+        </p>
+
+        <ul>
+            <li>AI/ML applications in enterprise software</li>
+            <li>Product development and go-to-market strategies</li>
+            <li>Personal productivity and deep work</li>
+            <li>Building systems that scale</li>
+            <li>Technical communication and documentation</li>
+        </ul>
+
+        <h2>Outside of Work</h2>
+        
+        <p>
+            When I'm not working, you'll find me:
+        </p>
+
+        <ul>
+            <li>Reading (see my <a href="reading.html">reading page</a> for what I'm currently into)</li>
+            <li>Exploring NYC's coffee shops and neighborhoods</li>
+            <li>Running and staying active</li>
+            <li>Tinkering with side projects and new technologies</li>
+        </ul>
+
+        <h2>Get in Touch</h2>
+        
+        <p>
+            I'm always happy to connect with people working on interesting problems or thinking about similar topics. 
+            Feel free to reach out:
+        </p>
+
+        <div style="margin: 2rem 0;">
+            <div class="social-links" style="justify-content: flex-start;">
+                <a href="mailto:mwdik@comcast.net">Email</a>
+                <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div style="background-color: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+            <h3 style="margin-top: 0;">Colophon</h3>
+            <p style="margin-bottom: 0.5rem;">
+                This site is built with simple HTML and CSS, hosted on GitHub Pages. Inspired by the clean, 
+                content-focused design of sites like <a href="https://eugeneyan.com" target="_blank">eugeneyan.com</a>.
+            </p>
+            <p style="margin-bottom: 0;">
+                Typography uses the system font stack for optimal readability across devices. The design 
+                prioritizes content and readability over flashy effects.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-bio">
+                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
+                    I write about technology, product development, and continuous learning.
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © Michael Dik 2024 • <a href="mailto:mwdik@comcast.net">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
 </body>
-
 </html>
