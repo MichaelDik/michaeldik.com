@@ -21,15 +21,15 @@
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split('/').pop() || 'index.html';
     const navLinks = {
-        'index.html': 'nav-blog', // In blog directory, index.html is the blog page
+        'index.html': 'nav-blog', // In thoughts directory, index.html is the thoughts page
         'predictions.html': 'nav-blog',
         'thoughts.html': 'nav-thoughts',
         'reading.html': 'nav-reading',
         'about.html': 'nav-about'
     };
     
-    // Always highlight blog link when in blog directory
-    if (currentPath.includes('/blog/')) {
+    // Always highlight thoughts link when in thoughts directory
+    if (currentPath.includes('/thoughts/')) {
         const blogLink = document.getElementById('nav-blog');
         if (blogLink) {
             blogLink.classList.add('active');

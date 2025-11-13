@@ -3,9 +3,9 @@
 ## November 8, 2024 - Complete Site Redesign
 
 ### ✨ New Structure
-Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writing/writing-faq/) with a focus on clean, professional design and excellent readability.
 
 ### 🎨 Design System
+
 - **New CSS Framework**: Complete rewrite of `app.css` with modern design patterns
   - CSS custom properties for easy theming
   - Responsive design with mobile-first approach
@@ -16,6 +16,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 ### 📄 Pages Created/Updated
 
 #### index.html (Home Page)
+
 - Hero section with tagline
 - Recent writing section with article previews
 - About preview section
@@ -23,6 +24,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Professional footer
 
 #### thoughts.html (Blog Post Example)
+
 - Complete article about Deep Work
 - Article metadata (tags, reading time)
 - Proper heading hierarchy
@@ -32,6 +34,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Related content suggestions
 
 #### writing-faq.html (FAQ Article)
+
 - FAQ-style article structure
 - Questions as H3 headings
 - Comprehensive writing guide
@@ -39,6 +42,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Perfect example of Eugene Yan's style
 
 #### reading.html (Book Reviews)
+
 - "Currently Reading" section
 - Beautiful book review cards with:
   - Book covers
@@ -51,6 +55,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
   - The Singularity Is Nearer by Ray Kurzweil
 
 #### about.html (About Page)
+
 - Professional bio with profile picture
 - "What I Do" section
 - "Why I Write" section
@@ -60,6 +65,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Colophon (technical details about the site)
 
 #### navbar.html (Shared Navigation)
+
 - Sticky header design
 - Auto-highlights active page
 - Integrated profile picture
@@ -69,12 +75,14 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 ### 🎯 Components Added
 
 #### Navigation System
+
 - Sticky navbar that stays visible while scrolling
 - Active page highlighting
 - Smooth transitions
 - Mobile-responsive
 
 #### Article Components
+
 - Article metadata display
 - Tag system
 - Reading time estimates
@@ -82,12 +90,14 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Newsletter signup forms
 
 #### Book Review Cards
+
 - Cover image display
 - Star rating system
 - Goodreads integration
 - Responsive layout
 
 #### Footer
+
 - Social media links
 - Professional bio
 - Copyright information
@@ -96,6 +106,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 ### 🛠️ Technical Improvements
 
 #### Performance
+
 - Static HTML (no build process needed)
 - Single CSS file
 - Minimal JavaScript (only for navbar loading)
@@ -103,12 +114,14 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - No external dependencies
 
 #### SEO
+
 - Added `sitemap.xml` for search engines
 - Added `robots.txt`
 - Proper meta descriptions on all pages
 - Semantic HTML structure
 
 #### Accessibility
+
 - Semantic HTML5 elements
 - High contrast text
 - Proper heading hierarchy
@@ -116,6 +129,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Focus states for interactive elements
 
 #### Responsive Design
+
 - Mobile-first approach
 - Breakpoints at 768px
 - Flexible layouts
@@ -124,6 +138,7 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 ### 📚 Documentation
 
 #### README.md
+
 - Complete documentation of structure
 - Customization guide
 - Deployment instructions
@@ -131,23 +146,27 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Performance notes
 
 #### QUICKSTART.md
+
 - Quick start guide
 - Step-by-step customization
 - Deployment instructions
 - Next steps checklist
 
 #### CHANGELOG.md
+
 - This file documenting all changes
 
 ### 🎨 Design Details
 
 #### Typography
+
 - Base font size: 18px
 - Line height: 1.7 for optimal readability
 - System font stack for native performance
 - Responsive font sizes on mobile
 
 #### Colors
+
 - Light theme with white background
 - High contrast text (#222222)
 - Blue links (#0366d6)
@@ -155,18 +174,21 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 - Subtle borders (#e1e4e8)
 
 #### Spacing
+
 - Generous margins between sections
 - Comfortable padding in components
 - Consistent vertical rhythm
 - Mobile-optimized spacing
 
 ### 🔗 Links & Navigation
+
 - All internal links functional
 - Social media link placeholders
 - Goodreads integration
 - Email contact links
 
 ### 📱 Mobile Optimization
+
 - Responsive navigation
 - Optimized font sizes
 - Touch-friendly targets
@@ -178,10 +200,10 @@ Complete redesign inspired by [Eugene Yan's website](https://eugeneyan.com/writi
 ## Previous Version
 
 The original version had:
+
 - Basic dark theme
 - Simple navigation
 - Minimal content
 - Basic styling
 
 This redesign represents a complete overhaul focusing on professional presentation, content quality, and user experience.
-

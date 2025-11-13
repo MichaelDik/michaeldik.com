@@ -8,7 +8,7 @@
         </button>
         <nav class="nav-links" id="nav-links">
             <a href="index.html" id="nav-home">Home</a>
-            <a href="blog/index.html" id="nav-blog"> Thoughts</a>
+            <a href="thoughts/index.html" id="nav-blog"> Thoughts</a>
             <a href="reading.html" id="nav-reading">Reading</a>
             <a href="about.html" id="nav-about">About</a>
             <img src="profile.jpeg" alt="Michael Dik" class="profile-pic" />
@@ -28,8 +28,8 @@
         'about.html': 'nav-about'
     };
     
-    // Check if we're in the blog directory
-    if (currentPath.includes('/blog/')) {
+    // Check if we're in the thoughts directory
+    if (currentPath.includes('/thoughts/')) {
         const blogLink = document.getElementById('nav-blog');
         if (blogLink) {
             blogLink.classList.add('active');
