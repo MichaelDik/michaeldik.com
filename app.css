@@ -406,6 +406,42 @@ hr {
     text-decoration: none;
 }
 
+/* Blog Post Preview */
+.blog-post-preview {
+    margin-bottom: 3rem;
+}
+
+.blog-post-preview h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-preview h2 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.blog-post-preview h2 a:hover {
+    color: var(--link-color);
+}
+
+.blog-post-preview p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.read-more {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.read-more:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
 /* Citation Box */
 .citation-box {
     background-color: var(--bg-secondary);

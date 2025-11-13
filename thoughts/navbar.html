@@ -1,17 +1,17 @@
 <div class="navbar">
     <div class="nav-container">
-        <a href="index.html" class="site-name">Michael Dik</a>
+        <a href="../index.html" class="site-name">Michael Dik</a>
         <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <nav class="nav-links" id="nav-links">
-            <a href="index.html" id="nav-home">Home</a>
-            <a href="blog/index.html" id="nav-blog"> Thoughts</a>
-            <a href="reading.html" id="nav-reading">Reading</a>
-            <a href="about.html" id="nav-about">About</a>
-            <img src="profile.jpeg" alt="Michael Dik" class="profile-pic" />
+            <a href="../index.html" id="nav-home">Home</a>
+            <a href="index.html" id="nav-blog"> Thoughts </a>
+            <a href="../reading.html" id="nav-reading">Reading</a>
+            <a href="../about.html" id="nav-about">About</a>
+            <img src="../profile.jpeg" alt="Michael Dik" class="profile-pic" />
         </nav>
     </div>
 </div>
@@ -21,14 +21,14 @@
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split('/').pop() || 'index.html';
     const navLinks = {
-        'index.html': 'nav-home',
+        'index.html': 'nav-blog', // In blog directory, index.html is the blog page
         'predictions.html': 'nav-blog',
         'thoughts.html': 'nav-thoughts',
         'reading.html': 'nav-reading',
         'about.html': 'nav-about'
     };
     
-    // Check if we're in the blog directory
+    // Always highlight blog link when in blog directory
     if (currentPath.includes('/blog/')) {
         const blogLink = document.getElementById('nav-blog');
         if (blogLink) {
@@ -61,3 +61,4 @@
         });
     }
 </script>
+

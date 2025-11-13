@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog by Michael Dik - Thoughts on technology, AI, and the future">
+    <title> Thoughts | Michael Dik</title>
+    <link rel="stylesheet" href="../app.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <h1> Thoughts</h1>
+        
+        <div class="article-meta">
+            <span> What I am currently thinking about</span>
+        </div>
+
+        <div class="content-section">
+            <p>
+                Welcome to my blog. Here I share my thoughts on technology trends, predictions, 
+                and ideas about where we're headed.
+            </p>
+
+            <hr>
+
+            <!-- Article List -->
+            <article class="blog-post-preview">
+                <h2><a href="predictions.html">No Timeline -  Predictions</a></h2>
+                <div class="article-meta">
+                    <span>November 2025</span>
+                </div>
+                <p>
+                    
+                </p>
+                <a href="predictions.html" class="read-more">Read more →</a>
+            </article>
+
+            <hr>
+
+            <!-- Add more articles here as you write them -->
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-bio">
+                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
+                    I write about technology, product development, and continuous learning.
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © Michael Dik 2025 • <a href="mailto:mwdik@comcast.net">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
+

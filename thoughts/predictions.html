@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Predictions and Forecasts by Michael Dik">
+    <title>Predictions | Michael Dik</title>
+    <link rel="stylesheet" href="../app.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <h1>Predictions</h1>
+        
+        <div class="article-meta">
+            <span>My thoughts on what's coming next</span>
+        </div>
+
+        <div class="content-section">
+            <h2>No Timeline -  Technology Predictions</h2>
+            
+            <p>
+
+                In our lifetimes, Manhattan will completely ban non-self driving cars. 
+
+            </p>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-bio">
+                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
+                    I write about technology, product development, and continuous learning.
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © Michael Dik 2025 • <a href="mailto:mwdik@comcast.net">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
+
