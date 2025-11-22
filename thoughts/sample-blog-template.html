@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample blog post template for new writing">
+    <title>Post Title Here | Michael Dik</title>
+    <link rel="stylesheet" href="../app.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <article>
+            <h1>Post Title Goes Here</h1>
+            
+            <div class="article-meta">
+                <a href="#" class="article-tag">tag</a>
+                <span>·</span>
+                <span>Month Day, Year</span>
+                <span>·</span>
+                <span>Estimated read time</span>
+            </div>
+
+            <p>
+                Opening paragraph. Frame the problem, the question you are exploring, or the story you want
+                to tell. Keep it concise and give readers a reason to keep going.
+            </p>
+
+            <h2>Section Heading</h2>
+            <p>
+                Use sections to break up the post. Outline the main idea of this section and support it with
+                a few short paragraphs.
+            </p>
+
+            <h3>Sub-point</h3>
+            <p>
+                Drill into a specific detail, example, or takeaway. Short bullet lists can work well here:
+            </p>
+            <ul>
+                <li>Key takeaway or principle</li>
+                <li>Supporting detail or example</li>
+                <li>Link to a reference if helpful</li>
+            </ul>
+
+            <h2>Another Section</h2>
+            <p>
+                Continue the narrative or argument. Add quotes, data, or anecdotes to make the point vivid.
+            </p>
+
+            <blockquote>
+                "Optional pull-quote or key idea to emphasize."
+            </blockquote>
+
+            <h2>Wrap Up</h2>
+            <p>
+                Close with a short summary or next steps. Invite readers to reflect, experiment, or reach out.
+            </p>
+        </article>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-bio">
+                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
+                    I write about technology, product development, and continuous learning.
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © Michael Dik 2025 • <a href="mailto:mwdik@comcast.net">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
