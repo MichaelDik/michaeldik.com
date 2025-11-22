@@ -58,24 +58,7 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <div class="social-links">
-                    <a href="https://x.com/mikedik_" target="_blank">Twitter</a>
-                    <a href="https://www.linkedin.com/in/michael-dik-b01512109/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/MichaelDik" target="_blank">GitHub</a>
-                </div>
-                <div class="footer-bio">
-                    I'm a Solution Engineer at Salesforce building AI-powered solutions that help customers succeed. 
-                    I write about technology, product development, and continuous learning.
-                </div>
-            </div>
-            <div class="footer-copyright">
-                © Michael Dik 2025 • <a href="mailto:mwdik@comcast.net">Contact</a>
-            </div>
-        </div>
-    </div>
+    <div id="footer-container"></div>
 
     <script>
         fetch('navbar.html')
@@ -84,6 +67,18 @@
                 document.getElementById('navbar-container').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    <script>
+        const footerPath = window.location.pathname.includes('/thoughts/') ? '../footer.html' : 'footer.html';
+        fetch(footerPath)
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.getElementById('footer-container');
+                if (footerContainer) {
+                    footerContainer.innerHTML = data;
+                }
+            })
+            .catch(error => console.error('Error loading footer:', error));
     </script>
 </body>
 </html>
