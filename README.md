@@ -1,14 +1,6 @@
 # Michael Dik's Personal Website
 
-A clean, content-focused personal website inspired by [Eugene Yan's site](https://eugeneyan.com). Built with simple HTML and CSS, prioritizing readability and content over flashy effects.
 
-## 🎨 Design Philosophy
-
-- **Content-first**: Clean typography and generous spacing for optimal readability
-- **Minimal and professional**: No unnecessary animations or distractions
-- **Responsive**: Works beautifully on desktop, tablet, and mobile
-- **Fast**: Static HTML with minimal dependencies loads instantly
-- **Accessible**: Semantic HTML and high contrast for accessibility
 
 ## 📁 Structure
 
