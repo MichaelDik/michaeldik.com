@@ -170,21 +170,13 @@ For GitHub Pages:
 3. Select your branch (usually `main`)
 4. Your site will be live at `https://username.github.io/repo-name`
 
-## 🎓 Inspiration
 
-This site is inspired by:
-- [Eugene Yan](https://eugeneyan.com) - Clean, content-focused design
-- [Paul Graham](http://paulgraham.com) - Simplicity and readability
-- [Gwern Branwen](https://www.gwern.net) - Deep, thoughtful content
-- [Derek Sivers](https://sive.rs) - Minimal, fast, semantic HTML
-
-## 📝 Content Ideas
 
 Some ideas for content you can add:
 - **Writing**: Blog posts, essays, tutorials
 - **Projects**: Side projects, open source work
 - **Notes**: Learning notes, book summaries
-- **Now**: What you're currently working on ([inspired by Derek Sivers](https://nownownow.com/about))
+- **Now**: What you're currently working on 
 - **Uses**: Tools and setup you use
 - **Speaking**: Talks and presentations
 
@@ -204,4 +196,4 @@ Feel free to use this template for your own site! No attribution required, but a
 
 ---
 
-Built with ❤️ and simple HTML/CSS by Michael Dik
+
