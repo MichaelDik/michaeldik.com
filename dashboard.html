@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard | Michael Dik</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container" style="padding-top: 4rem;">
+        <h1>Dashboard</h1>
+
+        <div class="content-section">
+            <p style="font-size: 1.2rem;">
+                Elon Musk Net Worth: <strong id="musk-worth">Loading...</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        fetch("https://api.codetabs.com/v1/proxy/?quest=https://www.forbes.com/forbesapi/person/rtb/0/position/true.json")
+            .then(res => res.json())
+            .then(data => {
+                for (const p of data.personList.personsLists) {
+                    if (p.personName === "Elon Musk") {
+                        const worth = (p.finalWorth * 1_000_000).toLocaleString("en-US", {
+                            style: "currency",
+                            currency: "USD",
+                            maximumFractionDigits: 0
+                        });
+                        document.getElementById("musk-worth").textContent = worth;
+                        return;
+                    }
+                }
+                document.getElementById("musk-worth").textContent = "Not found";
+            })
+            .catch(() => {
+                document.getElementById("musk-worth").textContent = "Failed to load data";
+            });
+    </script>
+</body>
+</html>
