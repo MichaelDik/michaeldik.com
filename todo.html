@@ -6,6 +6,7 @@
     <meta name="description" content="Sample blog post template for new writing">
     <title> Todo | Michael Dik</title>
     <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -25,11 +26,16 @@
        
     <div id="footer-container"></div>
 
+    <script src="navbar.js"></script>
     <script>
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
+                const navbarContainer = document.getElementById('navbar-container');
+                if (navbarContainer) {
+                    navbarContainer.innerHTML = data;
+                    window.initializeNavbar?.();
+                }
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
